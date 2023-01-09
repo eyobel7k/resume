@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+   
+   <link rel="stylesheet" href="/styles/grid.css">
+   <link rel="stylesheet" href="/styles/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <section class="nav-section another-section" id="profile-wrapper">
+      <div class="container ">
+        <div id="nav-toggle" class="header-nav">
+          <a href="#" class="header-logo"
+            ><img src="/assets/eyoba.png" class="img-logo"
+          /></a>
+          <ul id="nav-list" class="nav-menu">
+            <li id="home" class="nav-list"><a href="/index.html">Home</a></li>
+            <li class="nav-list"><a href="/about.html">About</a></li>
+            <li class="nav-list"><a href="/portfolio.html">Portfolio</a></li>
+            <li class="nav-list"><a href="/EyobelResume.pdf"target="_blank">Resume</a></li>
+            <li class="nav-list" onclick="myFunction()">
+              <i
+                onclick="moon(this)"
+                id="icon"
+                class="fa fa-sun-o"
+              ></i>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <section data-aos="flip-up"data-aos-easing="ease-out-cubic"
+             data-aos-duration="2000" id="portfolio" class="about-me my_portfolio">
+          <div class="about-content">
+            <h2 data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"><a href="#home"> Recent projects</a></h2>
+            <p data-aos="fade-up"
+              data-aos-duration="3000" id="about-section">
+              Check out my personal and group projects from my apprenticeship at Alphaworks
+            </p>
+          </div>
+        </section>
+        <div class=" myBtnContainer">
+          <button class="btn active">Show all</button>
+          <button class="btn"onclick="filterSelection('javascript')">JavaScript</button>
+          <button class="btn"onclick="filterSelection('react')">React</button>
+          <button class="btn"onclick="filterSelection('reactnative')">React Native</button>
+        </div>
+        
+        <div id="portfolio_container">
+          <div data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000" class="card stacked_card_card">
+          <a href="default.asp"><img  src="/assets/Marvel.png" alt="person" class="card_img"></a>
+          <p class="project-title">Marvel Space</p>
+          <p>A React-Native project. A user will be able to customize the theme for their page, create an account, send messages, friend requests, and more</p>
+            <div class="card_content">
+              <p data-aos="flip-left"
+              data-aos="zoom-in"
+              data-aos-duration="1000"class="card_title"><a href="https://github.com/eyobel7k/team-black-panther"target="_blank">Github</a></a></p>
+              <p data-aos="flip-right"
+              
+              data-aos-duration="1000"class="card_description"><a href="https://eyobel7k.github.io/team-black-panther/"target="_blank">LiveSite</a></p>
+            </div>
+          </div>
+          <div   data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"class="card stacked_card_card">
+            <img  src="/assets/decide.png" alt="person" class="card_img">
+            <p class="project-title">Eight Ball</p>
+            <p>The project is written in Javascript.  Any question you ask receives a random reply such as "It is certain" or "My sources say no.".</p>
+            <div class="card_content">
+              <p data-aos="flip-left"
+              data-aos="zoom-in"
+              data-aos-duration="1000"class="card_title"><a href="https://github.com/eyobel7k/team-black-panther"target="_blank">Github</a></a></p>
+              <p data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"class="card_description"><a href="https://eyobel7k.github.io/team-black-panther/"target="_blank">LiveSite</a></p>
+            </div>
+          </div>
+          <div data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000" class="card stacked_card_card">
+            <img  src="/assets/Haunted.png" alt="person" class="card_img">
+            <p class="project-title">Haunted House</p>
+            <p>A Halloween themed interactive game built using React. Players must explore each room and complete the challenges to escape</p>
+            <div class="card_content">
+              <p data-aos="flip-left"
+              data-aos="zoom-in"
+              data-aos-duration="1000"class="card_title"><a href="https://github.com/eyobel7k/team-black-panther"target="_blank">Github</a></a></p>
+              <p data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"class="card_description"><a href="https://eyobel7k.github.io/team-black-panther/"target="_blank">LiveSite</a></p>
+            </div>
+          </div>
+         
+          <div data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000" class="card stacked_card_card">
+            <img  src="/assets/Ecard.png" alt="person" class="card_img">
+            <p class="project-title">E-card</p>
+            <p>A React app that creates custom greeting cards for the holiday season. It is easy to customize and reshare with friends and family.</p>
+            <div class="card_content">
+              <p data-aos="flip-left"
+              data-aos="zoom-in"
+              data-aos-duration="1000"class="card_title"><a href="https://github.com/eyobel7k/team-black-panther"target="_blank">Github</a></a></p>
+              <p data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"class="card_description"><a href="https://eyobel7k.github.io/team-black-panther/"target="_blank">LiveSite</a></p>
+            </div>
+          </div>
+          </div>
+        </div>
+        
+      </div>
+      <footer  class="footer">
+        <ul class="footer-menu" id="nav-list">
+             <li class="nav-list">
+               <a href="https://github.com/eyobel7k"target="_blank"
+                 <i
+                 id="icon"
+                 class="fab fa-github"
+                 style="font-size: 30px;color:white;">
+                 </i>
+              </a>
+            </li>
+            <li class="nav-list">
+               <a href="https://www.linkedin.com/in/eyob7k/"target="_blank" 
+                 <i 
+                   id="icon"
+                   class="fab fa-linkedin"
+                   style="font-size: 30px;color: white;">
+                 </i>
+              </a>
+         </li>  
+      </ul>
+      </footer>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./Js/index.js"></script>
+  </body>
+</html>

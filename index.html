@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <section class="nav-section" id="profile-wrapper">
+      <div class="container header-container">
+        <div id="nav-toggle" class="header-nav">
+          <a href="#" class="header-logo"
+            ><img src="/assets/eyoba.png" class="img-logo"
+          /></a>
+          <ul id="nav-list" class="nav-menu">
+            <li id="home" class="nav-list"><a href="#home">Home</a></li>
+            <li class="nav-list"><a href="/about.html">About</a></li>
+            <li class="nav-list"><a href="/portfolio.html">Portfolio</a></li>
+            <li class="nav-list"><a href="/EyobelResume.pdf"target="_blank">Resume</a></li>
+            <li class="nav-list" onclick="myFunction()">
+              <i
+                onclick="moon(this)"
+                id="icon"
+                class="fa fa-sun-o"
+              ></i>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <section class="banner-hero">
+          <div class="main-banner">
+            <div class="main-content">
+              <h1>Hello I'm Eyob<br />Legese</h1>
+              <p>A Front-end Developer based in San Jose,California</p>
+              <div class="contact">
+                  <ul class="footer-menu" id="nav-list">
+                    <li class="nav-list">
+                      <a href="https://github.com/eyobel7k"target="_blank"
+                        <i
+                        id="icon"
+                        class="fab fa-github"
+                        style="font-size: 30px;color:white;">
+                        </i>
+                    </a>
+                  </li>
+                  <li class="nav-list">
+                      <a href="https://www.linkedin.com/in/eyob7k/"target="_blank" 
+                        <i 
+                          id="icon"
+                          class="fab fa-linkedin"
+                          style="font-size: 30px;color: white;">
+                        </i>
+                    </a>
+                  </li>  
+                </ul>
+              </div>
+            </div>
+            <div
+             data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000" 
+              id="img-hero"
+              class="hero-img"
+            >
+              <img src="/assets/My project (1).png" />
+            </div>
+          </div>
+        </section>
+        <footer  class="footer">
+          <ul class="footer-menu" id="nav-list">
+               <li class="nav-list">
+                 <a href="https://github.com/eyobel7k"target="_blank"
+                   <i
+                   id="icon"
+                   class="fab fa-github"
+                   style="font-size: 30px;color:white;">
+                   </i>
+                </a>
+              </li>
+              <li class="nav-list">
+                 <a href="https://www.linkedin.com/in/eyob7k/"target="_blank" 
+                   <i 
+                     id="icon"
+                     class="fab fa-linkedin"
+                     style="font-size: 30px;color: white;">
+                   </i>
+                </a>
+           </li>  
+        </ul>
+        </footer>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./Js/index.js"></script>
+  </body>
+</html>

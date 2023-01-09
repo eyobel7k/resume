@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Nav section -->
+    <section class="nav-section" id="profile-wrapper">
+      <div class="container header-container">
+        <div id="nav-toggle" class="header-nav">
+          <a href="#" class="header-logo"
+            ><img src="/assets/eyoba.png" class="img-logo"
+          /></a>
+          <ul id="nav-list" class="nav-menu">
+            <li id="home" class="nav-list"><a href="/index.html">Home</a></li>
+            <li class="nav-list"><a href="#about">About</a></li>
+            <li class="nav-list"><a href="/portfolio.html">Portfolio</a></li>
+            <li class="nav-list"><a href="/EyobelResume.pdf"target="_blank">Resume</a></li>
+            <li class="nav-list" onclick="myFunction()">
+              <i
+                onclick="moon(this)"
+                id="icon"
+                class="fa fa-sun-o"
+              ></i>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        
+        <!-- About me section -->
+        <section data-aos="flip-up"data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" id="about" class="about-me">
+          <div class="about-content">
+            <h2 data-aos="flip-down" data-aos-duration="1000"><a href="#home">About Me</a></h2>
+            <p id="about-section">
+           Hi, I'm Eyob Legese, a Front-end developer at Alphaworks. I have two years of hands-on experience building and designing websites and mobile applications using the latest technologies in web development. Prior to web development, I earned a BA degree in Accounting and Finance from CalPoly, Pomona. 
+            </p>
+            <p >
+            Following graduation, I worked for almost four years as a staff accountant for a financial services company. Despite my passion for analyzing numbers, web development turned out to be my true calling. During the 2020 Covid lockdown, I began taking web development courses out of curiosity. It wasn't until I learned about HTML that I realized web development would be a more creative career path for me. As my skills improved, I took more advanced courses in web development. Within a year of starting my career as a Front-end developer, I was accepted to a react Native apprenticeship program at Alphaworks.
+            </p>
+            <p >
+            I'm applying my newly acquired skills to develop more creative and appealing mobile applications and websites. I'm passionate about turning concepts into something very useful. When I'm not working, I enjoy watching sporting events such as soccer, football, and basketball, as well as listening to relaxing music. Get in touch with me on github or linkedin
+            </p>
+          </div>
+        </section>
+      <!-- Footer section -->
+      <footer  class="footer">
+        <ul  class="footer-menu" id="nav-list">
+        <li class="nav-list">
+          <a href="https://github.com/eyobel7k"target="_blank"<i
+            id="icon"
+            class="fab fa-github"
+            style="font-size: 30px;color:white;"
+          ></i> </a></li>
+          <li class="nav-list">
+           <a href="https://www.linkedin.com/in/eyob7k/"target="_blank" <i 
+              id="icon"
+              class="fab fa-linkedin"
+              style="font-size: 30px;color: white;"
+            ></i></a></li>
+         
+      </ul></footer>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./Js/index.js"></script>
+  </body>
+</html>
