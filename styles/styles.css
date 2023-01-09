@@ -1,0 +1,437 @@
+/* CSS Variable */
+
+:root {
+  --white: #dadcd1f4;
+  --darkMode: #030200;
+  --salmon:#fb6767;
+  --burgandy:#6a0519;
+  --yellow:#dcb20c;
+  --dayMode:#f0ede3;
+  --silver:#a7a1a1;
+  --whiteMode:#fff,
+  --mainColor:#491425a1,
+  --lemon:#ABD699
+  --lessDark:#111010;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+body{
+ background-color: #111110;
+  color: var(--white);
+  font-family: 'Lobster Two', cursive;
+ min-height: 100vh;
+ 
+}
+
+/* Resetting to default */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* common sections */
+img{
+  max-width: 100%;
+  height: auto;
+}
+ 
+.container{
+  max-width: 1224px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* Nav section */
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #111110;
+  opacity: 0.6;
+}
+
+.day-mode .header-nav{
+  background-color: #dadcd1f4;
+  opacity:0.8;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+  left: 60%;
+  top: 50px;
+}
+ .nav-menu a{
+  text-decoration: none;
+ color: var(--dayMode);
+}
+
+.nav-menu a:hover{
+  text-decoration: none;
+ color: var(--salmon);
+}
+
+.day-mode .nav-menu a{
+  color: #440505;
+}
+
+.day-mode .nav-menu a:hover{
+  color: var(--salmon);
+}
+
+.header-logo{
+  margin: 10px;
+  text-decoration: none;
+  transition: 0.3s ease-out;
+  font-size: 2rem;
+  z-index: 100;
+}
+.img-logo{
+  width:100%;
+  height: auto;
+  max-width: 50px;
+  top: 70px;
+  align-items: center;
+  transition: transform 1s;
+}
+
+.img-logo:hover{
+  transform: rotate(720deg);
+}
+
+.header-logo:hover{
+  color:var(--yellow);
+}
+
+.nav-list{
+  transition: 0.3s ease-out;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.nav-list:hover{
+  color: var(--dayMode);
+}
+
+.day-mode {
+  background-color: var(--white);
+  color: var(--burgandy);
+}
+
+#icon {
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+  color:var(--dayMode);
+  transition: transform 1s;
+ font-size: 30px; 
+ color: rgb(220, 178, 12)
+}
+
+#icon:hover{
+  transform: rotate(360deg);
+  color:var(--yellow)
+}
+
+.day-mode .fab{
+  background-color: #3b5998;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition:all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: var(--white)
+}
+
+.day-mode .bar{
+  background-color: var(--burgandy);
+}
+
+/* Home section */
+.banner-hero{
+  height: 500px;
+  margin: auto;
+  opacity: 0.8;
+}
+.main-banner{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+/* giving a credit for text shadow effect https://codepen.io/aakhya/pen/LXjwrq */
+
+.main-content h1{
+  align-self: center;
+  font-size: 72px;
+  margin-bottom: 6.5rem;
+  margin-top: 10rem;
+  color:#235c0bb5;
+  text-shadow: 0 2px 2px #dfdfdf, 
+      -2px 5px 1px #b8b8b8, 
+      -4px 8px 0px #979797, 
+      -6px 11px 0px #747474,
+      -8px 14px 0px #565656,
+      -10px 17px 0px #343434,
+      -12px 20px 0px #171717,
+      -14px 23px 0px #000;
+}
+
+.main-content p{
+  align-items: center;
+  font-size: 37px;
+  font-family: 'Forum', cursive;
+  margin-top: 35px;
+  color: var(--dayMode);
+}
+
+.day-mode .main-content p{
+  color: var(--darkMode);
+}
+
+.hero-img img{
+  border-radius: 50%;
+  cursor: pointer;
+  border-bottom: 10px solid rgb(167, 6, 6);
+  box-shadow: 0 2px 2px #dfdfdf, 
+      -2px 5px 1px #a7a1a1, 
+      -4px 8px 0px #979797, 
+      -6px 11px 0px #747474,
+      -8px 14px 0px #565656,
+      -10px 17px 0px #343434,
+      -12px 20px 0px #150f13,
+      -14px 23px 0px #000;
+      z-index: -100;
+}
+.contact {
+  display: none;
+}
+
+/* About page */
+.about-wrapper{
+  display: block;
+
+  justify-content: center;
+}
+
+.day-mode .my_portfolio{
+  
+  border: none
+}
+
+.my_portfolio{
+  margin-top: 3rem;
+  padding: .5rem;
+  border: none;
+  box-shadow: none;
+  opacity: 0.8;
+}
+.project-title{
+  text-align: center;
+  margin-top: .5rem;
+  font-weight: 900;
+  font-style: unset;
+}
+.my_portfolio p{
+  text-align: center;
+}
+.about-me h2{
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 2.5rem;
+  margin-top: 5rem;
+  
+}
+.about-me p{
+ 
+  padding: 15px;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  font-family: 'Forum', cursive;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+  color: var(--dayMode);
+}
+.about-content a{
+  color: #ABD699
+}
+.day-mode .about-content p {
+  color: var(--darkMode);
+ }
+ .day-mode #about h2{
+  color: var(--darkMode);
+ }
+
+.about-me a{
+  list-style: none;
+  text-decoration: none;
+}
+.day-mode .about-me a{
+  color: var(--darkMode);
+ }
+/* Portfolio section */
+
+/* Footer section */
+.footer{
+  padding: 20px;
+  text-align: center;
+  margin-top: 10rem;
+  height: 10rem;
+  background-color: var(--dark);
+  position: relative;
+}
+.footer-menu{
+  display: flex;
+  justify-content:center;
+  gap: 35px;
+  align-items: center;
+  list-style: none;
+}
+.footer-menu a{
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------- */
+
+/* media queries starting @ 600px*/
+
+@media(max-width:570px){
+
+  .hamburger{
+    display: block;
+    z-index: 100;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity:0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 10px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 1.5rem;
+    background-color:var(--darkMode);
+    opacity: 0.1;
+    margin-top: -10px;
+  }
+  #nav-list{
+    background-color:var(--darkMode);
+    opacity: 0.6;
+   z-index: 100;
+  }
+  #nav-list:hover{
+    opacity: 0.8;
+  }
+.nav-list{
+  margin:2px 0;
+  padding: 2px 0;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: left;
+  z-index: 100;
+  
+}
+
+.nav-menu.active{
+  left:0;
+}
+.main-banner{
+  flex-direction: column-reverse;
+}
+.main-content h1{
+  font-size: 32px;
+  text-align: center;
+  color: #416a30;
+  margin-top: 1rem;
+  text-shadow: 0 2px 2px #dfdfdf, 
+  -2px 5px 1px #b8b8b8, 
+  -4px 8px 0px #979797, 
+  -6px 11px 0px #747474,
+  -8px 14px 0px #565656,
+  -10px 17px 0px #343434,
+  -12px 20px 0px #171717,
+  -14px 23px 0px rgb(0, 0, 0);
+}
+.main-content p{
+  text-align: center;
+  font-size: 22px;
+}
+.hero-img img{
+  border-radius: 100%;
+  margin-top: -2rem;
+  height: auto;
+  width: 250px;
+  margin-left: 4rem;
+}
+
+.about-me{
+  margin: -1rem 1rem 2rem 1rem;
+}
+.my_portfolio{
+  margin: 4rem 1rem 2rem 1rem;
+}
+.about-me h2{
+  text-align: center;
+  font-size: 32px;
+  color: var(--silver)
+}
+.about-me p{
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Forum', cursive;
+}
+
+.day-mode  #nav-list {
+  background-color: var(--white);
+  z-index: 100;
+ }
+
+ .footer{
+display: none;
+ 
+ }
+ .contact {
+  display: block;
+  margin-top: 1rem;
+  background-color: transparent;
+}
+.contact #nav-list {
+  background-color:transparent
+}
+}
+/* portfolio inspiration
+https://www.giftegwuenu.dev/#contact
+ */
+
+
+
+
